@@ -1,0 +1,61 @@
+/* css/settings.css */
+.settings-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 420px);
+  gap: 18px;
+}
+
+.settings-section {
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.settings-section + .settings-section {
+  margin-top: 18px;
+}
+
+.settings-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.workspace-danger {
+  border-color: rgba(251, 113, 133, 0.38);
+}
+
+.import-box {
+  padding: 14px;
+  border: 1px dashed var(--border);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.settings-preview {
+  display: grid;
+  gap: 10px;
+}
+
+.preview-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(154, 171, 199, 0.14);
+}
+
+.preview-row:last-child {
+  border-bottom: 0;
+}
+
+.preview-row span {
+  color: var(--muted);
+}
+
+@media (max-width: 980px) {
+  .settings-layout {
+    grid-template-columns: 1fr;
+  }
+}

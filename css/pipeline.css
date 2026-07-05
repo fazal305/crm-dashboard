@@ -1,0 +1,89 @@
+/* css/pipeline.css */
+.pipeline-toolbar {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) repeat(2, minmax(160px, 220px));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.pipeline-board {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(260px, 1fr));
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+}
+
+.pipeline-column {
+  min-height: 620px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.pipeline-column.drag-over {
+  border-color: var(--cyan);
+  background: var(--cyan-soft);
+}
+
+.pipeline-column-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.pipeline-column-title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 850;
+}
+
+.pipeline-column-value {
+  color: var(--green);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.pipeline-card {
+  display: grid;
+  gap: 9px;
+  margin-bottom: 10px;
+  padding: 13px;
+  border: 1px solid rgba(154, 171, 199, 0.18);
+  border-radius: 14px;
+  background: var(--card-strong);
+  cursor: grab;
+}
+
+.pipeline-card:active {
+  cursor: grabbing;
+}
+
+.pipeline-card.dragging {
+  opacity: 0.55;
+}
+
+.pipeline-card-title {
+  font-weight: 850;
+}
+
+.pipeline-card-meta {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.pipeline-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+@media (max-width: 760px) {
+  .pipeline-toolbar {
+    grid-template-columns: 1fr;
+  }
+}

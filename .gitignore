@@ -1,0 +1,14 @@
+# .gitignore
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Local environment files
+.env
+.env.*

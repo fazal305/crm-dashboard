@@ -1,0 +1,74 @@
+/* css/analytics.css */
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.analytics-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.75fr);
+  gap: 18px;
+}
+
+.analytics-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.analytics-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.analytics-card {
+  min-height: 126px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.analytics-card span {
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.analytics-card strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+
+.top-company-rank {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background: var(--cyan-soft);
+  color: var(--cyan);
+  font-weight: 850;
+}
+
+@media (max-width: 1200px) {
+  .analytics-grid,
+  .analytics-chart-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .analytics-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .analytics-grid,
+  .analytics-chart-grid {
+    grid-template-columns: 1fr;
+  }
+}

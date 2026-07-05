@@ -1,0 +1,55 @@
+/* css/companies.css */
+.company-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+  gap: 18px;
+}
+
+.company-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.company-insight-card {
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.company-insight-card span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.company-insight-card strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 1.2rem;
+}
+
+.website-link {
+  color: var(--cyan);
+  word-break: break-word;
+}
+
+.company-name {
+  font-weight: 800;
+}
+
+.company-city {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 1100px) {
+  .company-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .company-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
