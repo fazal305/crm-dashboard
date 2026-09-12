@@ -13,6 +13,8 @@ analytics, and local workspace persistence.
 
 CRM Dashboard is a frontend-only customer relationship management system inspired by enterprise tools like Salesforce and HubSpot. It demonstrates multi-page browser architecture, localStorage state persistence, CRUD workflows, sales pipeline logic, charts, filters, and a polished SaaS interface without build tools or frameworks.
 
+This is a domain adaptation of a shared admin-dashboard shell also used in an [HR portal](https://github.com/fazal305/hr-management-portal) and a [CMS admin panel](https://github.com/fazal305/cms-admin-panel); see [school-management-dashboard](https://github.com/fazal305/school-management-dashboard) for the most complete build of that system.
+
 ## Pages
 
 - Dashboard: CRM overview, metrics, revenue chart, pipeline summary, quick actions, upcoming activities, and recent activity log
